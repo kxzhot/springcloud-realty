@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-server1/eureka-server1.iml" filepath="$PROJECT_DIR$/eureka-server1/eureka-server1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-zuul/spring-zuul.iml" filepath="$PROJECT_DIR$/spring-zuul/spring-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-tag/springboot-tag.iml" filepath="$PROJECT_DIR$/springboot-tag/springboot-tag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-tag-feign/springboot-tag-feign.iml" filepath="$PROJECT_DIR$/springboot-tag-feign/springboot-tag-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-tag-web/springboot-tag-web.iml" filepath="$PROJECT_DIR$/springboot-tag-web/springboot-tag-web.iml" />
+    </modules>
+  </component>
+</project>

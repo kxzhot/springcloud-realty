@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fh.mapper.TagMapper">
+
+    <select id="queryTagTotalCount" resultType="long">
+        select count(*) from t_tag
+    </select>
+
+    <select id="queryTagList" parameterType="com.fh.model.Tag" resultType="com.fh.model.Tag">
+        select t.* from (select id,tag from t_tag order by id desc ) t limit #{start},#{length};
+    </select>
+    <select id="queryTag" parameterType="com.fh.model.Tag" resultType="com.fh.model.Tag">
+        select id,tag from t_tag order by id desc  ;
+    </select>
+
+    <insert id="addTag" parameterType="com.fh.model.Tag">
+        insert into t_tag (id,tag) values (#{id},#{tag});
+    </insert>
+
+    <delete id="deleteTag" parameterType="int">
+        delete from t_tag where id=#{id};
+    </delete>
+
+    <select id="toUpdateTag" parameterType="int" resultType="com.fh.model.Tag">
+        select id,tag  from t_tag where id=#{id};
+    </select>
+
+    <update id="updateTag" parameterType="com.fh.model.Tag">
+        update t_tag set id=#{id},tag=#{tag} where id=#{id};
+    </update>
+
+    <select id="queryTagById" parameterType="int" resultType="com.fh.model.Tag">
+        select id,tag  from t_tag where id=#{id};
+    </select>
+</mapper>

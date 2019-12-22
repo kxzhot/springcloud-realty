@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server1" />
+        <module name="spring-zuul" />
+        <module name="springboot-tag" />
+        <module name="springboot-tag-feign" />
+        <module name="springboot-tag-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="eureka-server1" target="1.7" />
+      <module name="spring-zuul" target="1.7" />
+      <module name="springboot-tag" target="1.7" />
+      <module name="springboot-tag-feign" target="1.7" />
+      <module name="springboot-tag-web" target="1.7" />
+      <module name="springboot-type" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
