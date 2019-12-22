@@ -8,18 +8,24 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server1" />
         <module name="spring-zuul" />
+        <module name="springboot-city" />
+        <module name="springboot-city-api" />
         <module name="springboot-tag" />
         <module name="springboot-tag-feign" />
         <module name="springboot-tag-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="eureka-server1" target="1.7" />
-      <module name="spring-zuul" target="1.7" />
-      <module name="springboot-tag" target="1.7" />
-      <module name="springboot-tag-feign" target="1.7" />
-      <module name="springboot-tag-web" target="1.7" />
+      <module name="eureka-server1" target="1.8" />
+      <module name="spring-zuul" target="1.8" />
+      <module name="springboot-city" target="1.8" />
+      <module name="springboot-city-api" target="1.8" />
+      <module name="springboot-tag" target="1.8" />
+      <module name="springboot-tag-feign" target="1.8" />
+      <module name="springboot-tag-web" target="1.8" />
       <module name="springboot-type" target="1.7" />
+      <module name="springcloud-area" target="1.8" />
+      <module name="springcloud-area-api" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

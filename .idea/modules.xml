@@ -3,10 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/eureka-server1/eureka-server1.iml" filepath="$PROJECT_DIR$/eureka-server1/eureka-server1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/house/house.iml" filepath="$PROJECT_DIR$/house/house.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-zuul/spring-zuul.iml" filepath="$PROJECT_DIR$/spring-zuul/spring-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-city/springboot-city.iml" filepath="$PROJECT_DIR$/springboot-city/springboot-city.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-city-api/springboot-city-api.iml" filepath="$PROJECT_DIR$/springboot-city-api/springboot-city-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-tag/springboot-tag.iml" filepath="$PROJECT_DIR$/springboot-tag/springboot-tag.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-tag-feign/springboot-tag-feign.iml" filepath="$PROJECT_DIR$/springboot-tag-feign/springboot-tag-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-tag-web/springboot-tag-web.iml" filepath="$PROJECT_DIR$/springboot-tag-web/springboot-tag-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-city-api/springcloud-city-api.iml" filepath="$PROJECT_DIR$/springcloud-city-api/springcloud-city-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springcloud-realty.iml" filepath="$PROJECT_DIR$/.idea/springcloud-realty.iml" />
     </modules>
   </component>
 </project>
