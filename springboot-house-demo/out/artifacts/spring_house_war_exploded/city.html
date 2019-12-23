@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地区管理</title>
+
+    <link rel="stylesheet" type="text/css" href="/js/bootstrap/css/bootstrap.css">
+    <link  rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link href="/js/DataTables-1.10.18/css/jquery.dataTables.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/js/DataTables-1.10.18/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/datetimepicker/bootstrap-datetimepicker.min.css" media="screen" >
+    <link href="/js/ztree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css">
+    <link href="/js/bootstrap-validator/css/bootstrapValidator.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script  type="text/javascript" src="/js/bootstrap-3.3.7-dist/datetimepicker/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script  type="text/javascript" src="/js/bootstrap-3.3.7-dist/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script  type="text/javascript" src="/js/fileinput5/js/fileinput.js"></script>
+    <script src="/js/bootstrap-3.3.7-dist/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="/js/bootbox-4.4.0/bootbox.js"></script>
+    <script type="text/javascript" src="/js/DataTables-1.10.18/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="/js/fileinput5/js/locales/zh.js"></script>
+    <script type="text/javascript" src="/js/fileinput5/InitFileInput.js"></script>
+    <script type="text/javascript" src="/js/ztree/js/jquery.ztree.core.min.js"></script>
+    <script type="text/javascript" src="/js/ztree/js/jquery.ztree.all.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-validator/js/language/zh_CN.js"></script>
+    <script type="text/javascript" src="/js/vue.js"></script>
+
+
+    <script type="text/javascript">
+        var zTreeObj;
+        var setting={
+
+
+            callback: {
+                onClick: zTreeOnClick
+            },
+            data:{
+                key: {
+                    url:"wwwx"
+                },
+                simpleData:{
+                    enable:true,
+                    idKey:"id",
+                    pIdKey:"pid",
+                    rootPid:0
+                }
+            }
+        }
+        $(function(){
+            $.post(
+                "http://aw-kong:9999/api-city/city/queryList",
+                function(data){
+                    var aaa=data.data
+                    zTreeObj=$.fn.zTree.init($("#treedemo"),setting,aaa);
+                    zTreeObj.expandAll(false);
+                }
+            )
+        })
+        function zTreeOnClick(event, treeId, treeNode){
+
+            $("#caozuo").css("display","");
+        }
+
+
+        function update(){
+            //获取修改之后的名字
+
+            var newName = $("#updateName").val();
+            var id = $("#updateId").val();
+            var pid = $("#updateFatherId").val();
+
+
+            //先更新数据库，在更新节点
+            $.post(
+                "http://aw-kong:9999/api-city/city/updateCity",
+                {"id":id,"name":newName,"pid":pid},
+                function(data){
+                    var data=data.data;
+                    //获取被选中的节点集合
+                    var nodes = zTreeObj.getSelectedNodes();
+                    //给节点的属性重新赋值
+                    nodes[0].name=newName;
+                    //更新节点
+                    zTreeObj.updateNode(nodes[0]);
+                    location.href="/city.html";
+                }
+            )
+        }
+
+        //修改
+        function toupdate(){
+
+                    //触发修改模态框
+                    $('#areaupdate').modal('show');
+
+                    toUpdate();
+        }
+        function toUpdate(){
+            var nodes = zTreeObj.getSelectedNodes();
+            $("#updateName").val(nodes[0].name);
+            $("#updateId").val(nodes[0].id);
+            var parentNode = nodes[0].getParentNode();
+            $("#updateFatherName").val(parentNode.name);
+            $("#updateFatherId").val(parentNode.id);
+
+
+        }
+        function toAdd(){
+                    //触发修改模态框
+                    $('#areaadd').modal('show');
+
+            tooadd();
+
+        }
+        function tooadd(){
+            var nodes = zTreeObj.getSelectedNodes();
+            $("#addFatherName").val(nodes[0].name);
+            $("#addFatherId").val(nodes[0].id);
+        }
+        function add(){
+            var pid=$("#addFatherId").val();
+            var name=$("#addName").val();
+            $.post(
+                "http://aw-kong:9999/api-city/city/addCity",
+                {"pid":pid,"name":name},
+                function(data){
+                    location.href="/city.html";
+                }
+            )
+        }
+
+        function deleteNode(){
+            var nodes = zTreeObj.getSelectedNodes();
+            var id=nodes[0].id;
+            $.post(
+                "http://aw-kong:9999/api-city/city/deleteNode",
+                {"id":id},
+                function(data){
+                    zTreeObj.removeNode(nodes[0]);
+                }
+            )
+        }
+
+
+    </script>
+</head>
+<body>
+
+<ol id="treedemo" class="ztree"></ol><br>
+
+<!--修改模态框-->
+<div class="modal fade" id="areaupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h1 class="modal-title" id="myModalLabelupdate"><font color="green">地区信息</font></h1>
+
+            </div>
+            <div class="modal-body" id="productupdateModalupdate">
+                <div class="form-group">
+                    <label for="updateFatherName">父节点</label>
+                    <input type="text"  id="updateFatherName" readonly="readonly" class="form-control"  placeholder="父节点">
+                </div>
+                <div class="form-group">
+                    <label for="updateName">修改节点</label>
+                    <input type="text" class="form-control" id="updateName" placeholder="修改节点">
+                </div>
+                <input type="hidden" id="updateId">
+                <input type="hidden" id="updateFatherId">
+                <input value="确认修改" type="button" class="btn btn-warning" onclick="update()">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='#'">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--添加模态框-->
+<div class="modal fade" id="areaadd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h1 class="modal-title" id="myModalLabel"><font color="green">地区信息</font></h1>
+
+            </div>
+            <div class="modal-body" id="productupdateModal">
+                <div class="form-group">
+                    <label for="addFatherName">父节点</label>
+                    <input type="text" class="form-control" id="addFatherName" placeholder="父节点" readonly="readonly">
+                </div>
+                <div class="form-group">
+                    <label for="addName">新增节点</label>
+                    <input type="text" class="form-control" id="addName" placeholder="新增节点">
+                </div>
+                <input type="hidden" id="addFatherId" >
+                <input value="确认增加" type="button" class="btn btn-success" onclick="add()">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='#'">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div id="caozuo" style="display:none">
+    <input value="修改" type="button" class="btn btn-success" onclick="toupdate()" >
+    <input value="增加" type="button" class="btn btn-warning" onclick="toAdd()">
+    <input value="删除" type="button" class="btn btn-danger" onclick="deleteNode()">
+</div>
+<center>
+
+
+</center>
+</body>
+</html>
