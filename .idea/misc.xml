@@ -15,9 +15,7 @@
         <option value="$PROJECT_DIR$/springboot-tag-feign/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-tag-web/pom.xml" />
         <option value="$PROJECT_DIR$/spring-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/springcloud-area/pom.xml" />
-        <option value="$PROJECT_DIR$/springcloud-area-api/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-city/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
       </list>
     </option>
   </component>

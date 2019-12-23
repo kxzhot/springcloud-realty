@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae64e5f1-e07b-4e51-808c-66ff3d249ef2" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/house_war_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
@@ -52,6 +53,10 @@
       <change beforePath="$PROJECT_DIR$/spring-zuul/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zuul/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-tag-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-tag-feign/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-tag/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-tag/src/main/resources/application.properties" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/eureka-server1/target/" />
     <ignored path="D:/Program Files/feiq/Recv Files/springboot-type/target/" />
@@ -209,8 +214,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-city/src/main/java/com/fh/SpringbootCityApplication.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="150">
               <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+=======
+            <state relative-caret-position="36">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -396,11 +406,19 @@
       <path value="$PROJECT_DIR$/springboot-tag/src/main/resources/static/js/zTree/package.json" />
     </packageJsonPaths>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="460" />
     <option name="y" value="70" />
     <option name="width" value="1295" />
     <option name="height" value="770" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="78" />
+    <option name="y" value="40" />
+    <option name="width" value="1615" />
+    <option name="height" value="1100" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -414,7 +432,29 @@
           <expand>
             <path>
               <item name="springcloud-realty" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< Updated upstream
               <item name="springcloud-realty" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="eureka-server1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-realty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eureka-server1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-realty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eureka-server1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-realty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eureka-server1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -431,8 +471,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577024478553" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-area-api" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577027142320" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -623,19 +668,30 @@
       <workItem from="1576894875390" duration="1204000" />
       <workItem from="1576985424247" duration="969000" />
       <workItem from="1576989151004" duration="670000" />
+<<<<<<< Updated upstream
       <workItem from="1577010782181" duration="1512000" />
       <workItem from="1577018594925" duration="436000" />
       <workItem from="1577019097575" duration="1672000" />
       <workItem from="1577021066099" duration="309000" />
       <workItem from="1577021469422" duration="2854000" />
+=======
+      <workItem from="1577010782181" duration="8237000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="51979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="53433000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="78" y="40" width="1615" height="1100" extended-state="0" />
+>>>>>>> Stashed changes
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -643,7 +699,11 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25670242" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.29324758" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32907802" />
@@ -657,7 +717,11 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info active="true" anchor="bottom" id="Find" order="8" visible="true" weight="0.37237978" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.3292232" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49967846" visible="true" weight="0.506383" />
+=======
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49967846" visible="true" weight="0.4332282" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -959,7 +1023,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/house/web/salesList.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-4860" />
+=======
+        <state relative-caret-position="36">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+>>>>>>> Stashed changes
       </provider>
     </entry>
   </component>
