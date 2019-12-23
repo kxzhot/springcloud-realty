@@ -12,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-tag-web/springboot-tag-web.iml" filepath="$PROJECT_DIR$/springboot-tag-web/springboot-tag-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-city-api/springcloud-city-api.iml" filepath="$PROJECT_DIR$/springcloud-city-api/springcloud-city-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springcloud-realty.iml" filepath="$PROJECT_DIR$/.idea/springcloud-realty.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
 </project>

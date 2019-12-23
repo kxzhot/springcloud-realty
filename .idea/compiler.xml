@@ -13,7 +13,6 @@
         <module name="springboot-tag" />
         <module name="springboot-tag-feign" />
         <module name="springboot-tag-web" />
-        <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
