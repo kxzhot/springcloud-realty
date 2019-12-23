@@ -13,6 +13,7 @@
         <module name="springboot-tag" />
         <module name="springboot-tag-feign" />
         <module name="springboot-tag-web" />
+        <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -26,6 +27,7 @@
       <module name="springboot-type" target="1.7" />
       <module name="springcloud-area" target="1.8" />
       <module name="springcloud-area-api" target="1.8" />
+      <module name="test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
